@@ -22,7 +22,7 @@ NOTE: It uses semantic-ui for icon and input, so you have to import 'semantic-ui
 
 ## Demo
 
-https://deniapps.com
+https://deniapps.com/playground/dna-rn
 
 ## Install
 
