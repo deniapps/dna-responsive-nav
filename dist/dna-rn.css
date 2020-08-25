@@ -59,6 +59,11 @@
   font-size: 18px; /** editable **/
 }
 
+/** move the last list with class 'right' to right adjust **/
+.dnarn nav .nav-items li.right {
+  margin-left: auto;
+}
+
 .dnarn nav .nav-items ul li a {
   color: #fff;
   font-size: 18px; /** editable **/
@@ -184,10 +189,6 @@
   }
   .dnarn nav .nav-items li a {
     font-size: 20px; /** editable **/
-  }
-  /** move the last list with class 'right' to right adjust **/
-  .dnarn nav .nav-items li.right {
-    margin-left: auto;
   }
 
   .dnarn nav form {
