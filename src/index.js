@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { useEffect, useState } from 'react'
 import { Input, Icon } from 'semantic-ui-react'
 // import { Router, Link } from 'react-router-dom'
-import 'semantic-ui-css/semantic.min.css'
+// import 'semantic-ui-css/semantic.min.css'
 
 const ResponsiveHeader = (props) => {
   const [kw, setKW] = useState('')

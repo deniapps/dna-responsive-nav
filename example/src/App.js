@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ResponsiveHeader from 'dna-responsive-nav'
+import 'semantic-ui-css/semantic.min.css'
 import 'dna-responsive-nav/dist/dna-rn.css'
 
 const links = (

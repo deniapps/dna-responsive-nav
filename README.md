@@ -8,7 +8,9 @@
 
 I created this tiny package to solve the issue that neither Semantic UI nor Semantic UI React offers a responsive navbar. They provide an [example](https://github.com/Semantic-Org/Semantic-UI-React/blob/master/docs/src/layouts/HomepageLayout.js) about how to create one using sidebar, but it's just way too complicated, and not easy to use in my opinion.
 
-You can of course use this for other theme, and create a new css file based one the default one at `dna-responsive-nav/dist/dna-rn.css` to match your site.
+You can customize the style by creating a new css file based one the default one at `dna-responsive-nav/dist/dna-rn.css` to match your site.
+
+NOTE: It uses semantic-ui for icon and input, so you have to import 'semantic-ui-css/semantic.min.css' if you site is not yet using it. (I am looking for a better solution to fix this drawback.)
 
 ## Features
 
@@ -34,6 +36,7 @@ npm install --save dna-responsive-nav
 import React from 'react'
 
 import ResponsiveHeader from 'dna-responsive-nav'
+import 'semantic-ui-css/semantic.min.css'
 import 'dna-responsive-nav/dist/dna-rn.css'
 
 const links = (
