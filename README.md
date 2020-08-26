@@ -35,6 +35,44 @@ https://deniapps.com/playground/dna-rn
 npm install --save dna-responsive-nav
 ```
 
+## Options
+
+| option       | required? | type     | explain                                                      |
+| ------------ | --------- | -------- | ------------------------------------------------------------ |
+| siteName     | yes       | string   | site name                                                    |
+| links        | yes       | node     | site navigation links                                        |
+| logo         | no        | string   | image path of the site logo, if no set, then logo is hidden. |
+| handleSearch | no        | function | if not set, the search box is hidden.                        |
+
+By default both siteName and logo show when the page width is >= 780px, and only logo shows when the page width is < 780px.
+But you can overwrite this by using css style sheet. Make a new one from the default one at `dna-responsive-nav/dist/dna-rn.css`,
+and change the following lines:
+
+```css
+/** when page width >=780px **/
+.dnarn nav .logo img {
+  display: inline-block; /** to show/hide logo image **/
+  vertical-align: middle;
+  padding-right: 5px; /** editable **/
+  height: 36px; /** editable **/
+}
+.dnarn nav .logo span {
+  display: none; /** to hide/show sitename **/
+}
+
+/** when page width < 780px **/
+@media (max-width: 779px) {
+  .dnarn nav .logo img {
+    padding-right: 0;
+    display: none; /** to hide/show the logo image **/
+  }
+
+  .dnarn nav .logo span {
+    display: inline-block; /** to show/hide sitename **/
+  }
+}
+```
+
 ## Usage
 
 ```jsx
@@ -79,6 +117,7 @@ const App = () => {
     <ResponsiveHeader
       siteName='DeNiApps'
       links={links}
+      logo='/image/YOUR-LOGO-PATH.png'
       handleSearch={handleSearch}
     />
   )

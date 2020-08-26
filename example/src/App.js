@@ -39,6 +39,7 @@ const App = () => {
     <ResponsiveHeader
       siteName='DeNiApps'
       links={links}
+      logo='/dna-computer.png'
       handleSearch={handleSearch}
     />
   )

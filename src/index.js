@@ -56,9 +56,12 @@ const ResponsiveHeader = (props) => {
           <Icon name='sidebar' />
         </div>
         <div className='logo'>
-          <a href='/'>{props.siteName}</a>
+          <a href='/'>
+            {props.logo && <img src={props.logo} alt={props.siteName} />}
+            <span>{props.siteName}</span>
+          </a>
         </div>
-        <div className='nav-items scroll'>{props.links}</div>
+        <div className='nav-items'>{props.links}</div>
         <div className='search-icon'>
           {props.handleSearch && <Icon name='search' />}
         </div>
@@ -86,6 +89,7 @@ const ResponsiveHeader = (props) => {
 
 ResponsiveHeader.propTypes = {
   siteName: PropTypes.string,
+  logo: PropTypes.string,
   links: PropTypes.node,
   handleSearch: PropTypes.func
 }

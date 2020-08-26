@@ -34,6 +34,14 @@
 .dnarn nav .logo > a {
   color: #62dafb !important; /** editable **/
 }
+
+.dnarn nav .logo img {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px; /** editable **/
+  height: 36px; /** editable **/
+}
+
 .dnarn nav .nav-items {
   display: flex;
   flex: 1;
@@ -167,13 +175,23 @@
     flex: 2;
     text-align: center; /** editable **/
   }
+
+  .dnarn nav .logo img {
+    padding-right: 0;
+  }
+
+  .dnarn nav .logo span {
+    display: none;
+  }
+
   .dnarn nav .nav-items {
     position: fixed;
     z-index: 99;
     top: 70px;
     width: 100%;
     left: -100%;
-    height: 100%;
+    height: calc(100vh - 70px);
+    overflow: auto;
     margin: 0 auto;
     text-align: left;
     background: #14181f; /** editable **/

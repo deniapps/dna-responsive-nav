@@ -1145,8 +1145,11 @@ var ResponsiveHeader = function ResponsiveHeader(props) {
     className: "logo"
   }, /*#__PURE__*/React.createElement("a", {
     href: "/"
-  }, props.siteName)), /*#__PURE__*/React.createElement("div", {
-    className: "nav-items scroll"
+  }, props.logo && /*#__PURE__*/React.createElement("img", {
+    src: props.logo,
+    alt: props.siteName
+  }), /*#__PURE__*/React.createElement("span", null, props.siteName))), /*#__PURE__*/React.createElement("div", {
+    className: "nav-items"
   }, props.links), /*#__PURE__*/React.createElement("div", {
     className: "search-icon"
   }, props.handleSearch && /*#__PURE__*/React.createElement(Icon, {
@@ -1173,6 +1176,7 @@ var ResponsiveHeader = function ResponsiveHeader(props) {
 
 ResponsiveHeader.propTypes = {
   siteName: propTypes.string,
+  logo: propTypes.string,
   links: propTypes.node,
   handleSearch: propTypes.func
 };
