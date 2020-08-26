@@ -193,6 +193,7 @@
     height: calc(100vh - 70px);
     overflow: auto;
     margin: 0 auto;
+    padding-bottom: 30px; /** leave some space to scroll to see the last item **/
     text-align: left;
     background: #14181f; /** editable **/
     display: inline-block;

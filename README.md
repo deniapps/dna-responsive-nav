@@ -1,6 +1,6 @@
 # dna-responsive-nav
 
-> React component for a responsive navigation bar with search box
+> React component for a responsive navigation bar with a search box using Semantic-UI theme.
 
 [![NPM](https://img.shields.io/npm/v/dna-responsive-nav.svg)](https://www.npmjs.com/package/dna-responsive-nav) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
