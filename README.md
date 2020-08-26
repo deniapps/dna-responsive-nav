@@ -20,6 +20,11 @@ NOTE: It uses semantic-ui for icon and input, so you have to import 'semantic-ui
 - Scrollable navigation links in the desktop mode in case you have many links
 - Fading effect when navigation links overflows at the left and right edges (i.e. x-overflow)
 
+## Screenshots
+
+![Blog-DeNiApps-mobile](https://user-images.githubusercontent.com/66892370/91248617-057a6380-e723-11ea-9b22-13840f2e52f6.png)
+![Blog-DeNiApps-search](https://user-images.githubusercontent.com/66892370/91248659-1fb44180-e723-11ea-958e-f75e1b084dc1.png)
+
 ## Demo
 
 https://deniapps.com/playground/dna-rn

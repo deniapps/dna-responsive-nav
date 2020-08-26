@@ -1,7 +1,14 @@
 {
   "name": "dna-responsive-nav",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React component for a responsive navigation bar with search box",
+  "keywords": [
+    "responsive navbar",
+    "responsive navigation",
+    "responsive search box",
+    "semantic-ui",
+    "react component"
+  ],
   "author": "deniapps",
   "license": "MIT",
   "repository": "deniapps/dna-responsive-nav",
