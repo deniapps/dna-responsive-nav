@@ -77,30 +77,48 @@ and change the following lines:
 
 ```jsx
 import React from 'react'
+import { useRouter } from 'next/router'
 
 import ResponsiveHeader from 'dna-responsive-nav'
 import 'semantic-ui-css/semantic.min.css'
 import 'dna-responsive-nav/dist/dna-rn.css'
 
+// we use next/router as example to get the pathname, by which we set "is-active" class to <a>
+const router = useRouter()
+
 const links = (
   <ul>
     <li key='blog-menu'>
-      <a href='/blog'>Blog</a>
+      <a
+        className={router.pathname === '/blog' ? 'is-active' : ''}
+        href='/blog'
+      >
+        Blog
+      </a>
     </li>
     <li key='about-menu'>
-      <a href='/about'>About Us</a>
+      <a
+        className={router.pathname === '/about' ? 'is-active' : ''}
+        href='/about'
+      >
+        About Us
+      </a>
     </li>
     <li key='playground-menu'>
-      <a href='/playground'>Playground</a>
+      <a
+        className={router.pathname === '/playground' ? 'is-active' : ''}
+        href='/playground'
+      >
+        Playground
+      </a>
     </li>
-    <li key='docs'>
-      <a href='/docs'>Docs</a>
-    </li>
-    <li key='tutorial'>
-      <a href='/tutorial'>Tutorial</a>
-    </li>
-    <li key='community'>
-      <a href='/community'>Community</a>
+    <li key='mistakes'>
+      <a
+        className={router.pathname === '/mistakes' ? 'is-active' : ''}
+        href='/mistakes'
+      >
+        Mistakes
+      </a>
     </li>
   </ul>
 )

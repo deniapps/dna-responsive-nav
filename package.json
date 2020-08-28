@@ -1,6 +1,6 @@
 {
   "name": "dna-responsive-nav",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "React component for a responsive navigation bar with search box",
   "keywords": [
     "responsive navbar",
