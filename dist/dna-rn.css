@@ -25,22 +25,20 @@
   justify-content: space-between;
   height: 70px; /** editable **/
 }
-.dnarn nav .logo {
-  color: #62dafb; /** editable **/
-  font-size: 30px; /** editable **/
-  line-height: 30px; /** editable **/
+
+.dnarn nav .logo span {
+  font-size: 20px; /** editable **/
   font-weight: 600; /** editable **/
   letter-spacing: -1px; /** editable **/
-}
-.dnarn nav .logo > a {
   color: #62dafb !important; /** editable **/
+  line-height: 40px; /** editable **/
 }
 
 .dnarn nav .logo img {
   display: inline-block;
   vertical-align: top; /** editable **/
   padding-right: 5px; /** editable **/
-  height: 36px; /** editable **/
+  height: 40px; /** editable **/
 }
 
 .dnarn nav .nav-items {
@@ -79,6 +77,8 @@
   font-weight: 500; /** editable **/
   text-decoration: none; /** editable **/
 }
+
+.dnarn nav .nav-items ul li a.is-active,
 .dnarn nav .nav-items ul li a:hover {
   color: #62dafb; /** editable **/
 }
