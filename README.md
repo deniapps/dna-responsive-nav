@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/dna-responsive-nav.svg)](https://www.npmjs.com/package/dna-responsive-nav) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Demo
+
+https://deniapps.com/playground/dna-rn
+
 ## About
 
 I created this tiny package to solve the issue that neither Semantic UI nor Semantic UI React offers a responsive navbar. They provide an [example](https://github.com/Semantic-Org/Semantic-UI-React/blob/master/docs/src/layouts/HomepageLayout.js) about how to create one using sidebar, but it's just way too complicated, and not easy to use in my opinion.
@@ -24,10 +28,6 @@ NOTE: It uses semantic-ui for icon and input, so you have to import 'semantic-ui
 
 ![Blog-DeNiApps-mobile](https://user-images.githubusercontent.com/66892370/91248617-057a6380-e723-11ea-9b22-13840f2e52f6.png)
 ![Blog-DeNiApps-search](https://user-images.githubusercontent.com/66892370/91248659-1fb44180-e723-11ea-958e-f75e1b084dc1.png)
-
-## Demo
-
-https://deniapps.com/playground/dna-rn
 
 ## Install
 
